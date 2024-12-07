@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  
+}
+.navbar{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    font-size: 10px;
+}
+.navbar .logo img {
+    margin-left: -150px;
+    margin-top: 23px;
+    
+ 
+}
+.navbar .first{
+    font-size: 10px;
+}
+
+.navbar .first ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.navbar .upper {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+.navbar .upper ul{
+    gap: 25px;
+}
+.navbar .upper .b{
+margin-left: 300px;
+gap: 40px;
+align-items: center;
+
+}
+.navbar .upper .b i{
+    font-size: 16px;
+    color:brown;
+}
+.upper .b abbr{
+    text-decoration: underline;
+    color: blue;
+    font-size: 16px;
+}
+.navbar .first .upper  button{
+   
+    background: #ffbc0d;
+    text-decoration: none;
+    padding: 8px 25px;
+   margin: 5px 0;
+   border-radius: 4px;
+   
+    border: none;
+}
+.navbar .first .upper button a{
+   
+    
+    align-items: center;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.navbar .first .upper ul li a{
+    font-size: 1pc;
+}
+.navbar .lower{
+    margin-top: 25px;
+}
+.navbar .lower ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 33px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    font-size: 20px;
+}
+
+.navbar .lower ul li a{
+    font-size: 16px;
+}
+
+.section1{
+   display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+   
+}
+.A1 img{
+    width: 668px;
+    height: 333px;
+   }
+
+.section1 .B1 h1{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.section1 .B1 p{
+    margin-bottom: 20px;
+}
+.section1 .B1 h6{
+    margin-bottom: 20px;
+}
+.section1 .B1  button{
+    /* border-radius: 20px; */
+    background-color:#ffbc0d;
+    height: 50px;
+    width: 211px;
+    border: none;
+    transition:  all 0.5s;
+}
+.section1 .B1  button a{
+    text-decoration: none;
+    font-size:medium;
+    color: black;
+}
+.section1 .B1  button:hover{
+    background-color: red;
+}
+
+/*----------------------------------footer---------------------------*/
+
+footer{
+    margin: 10px;
+}
+
+footer .footer_main{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 15px;
+    margin: 15px 0;
+    color: black;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 20px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover{
+    color: black;
+}
+footer .footer_main .tag .social_link a{
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+   
+  
+    margin: 0 5px;
+    z-index: 10;
+  
+}
+.footer_main .tag .social_link a i{
+    gap: 20px;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color: black;
+}
+
+
+
+footer .footer_main .tag .search_bar{
+    width: 250px;
+    height: 40px;
+   
+    border-radius: 10px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+   
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+   
+    font-size: 13px;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 7px;
+    
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+footer .image-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 97px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* Tablet View */
+/*@media (max-width: 768px)  {
+    
+    .navbar .first .upper{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+       display: none;
+    }
+    .first .upper li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    padding:  6px 10px;
+
+    }
+.first .upper ul li a{
+    color:white;
+        font-size: 12px;
+}
+label{
+    display: block;
+   }
+   #click:checked ~ .header nav .nav-links ul{
+    display: block;
+} 
+    .section1{
+        flex-direction: column;
+    }
+    footer .footer_main .tag h1 {
+        font-size: 15px;
+        margin: 15px 0;
+        color: black;
+        text-align: center;
+    }
+    footer .footer_main {
+        flex-direction: column;
+    }
+    footer .image-head {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+label{
+    display: none;
+   }
+   
+
+#click{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 6px;
+        margin-left: 0;
+        
+       align-items: start;
+       display: flex;
+       justify-content: space-between;
+        
+        
+    }
+
+    .navbar .logo img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar .first  ul {
+        
+        position: absolute;
+         top: 70px;
+         left: 0;
+         background: #333;
+         width: 100%;
+        display: none;
+
+    }
+    .navbar .first ul li{
+        display: block;
+        
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    padding:  6px 10px;
+    }
+    .navbar .first ul li a{
+        color: aliceblue;
+        font-size: 14px;
+    }
+
+    .navbar .upper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .first .upper button{
+        margin-top: 40px;
+       
+    }
+
+    .navbar .upper .b {
+        margin-left: 0;
+    }
+
+    .section1 {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    #click:checked ~ .navbar .first   ul{
+        display: block;
+    }
+    label
+    {
+        display: block;
+    }
+    .fa-solid {
+        font-size: 30px;
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+
+
+    
+
+    .A1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer .footer_main .tag h1 {
+        font-size: 15px;
+        margin: 15px 0;
+        color: black;
+        text-align: center;
+    }
+    footer .footer_main {
+        flex-direction: column;
+    }
+    footer .image-head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1{
+        flex-direction: column;
+    }
+}
